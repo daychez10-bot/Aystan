@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aystan | Official Brand</title>
+    <title>AYSTAN | Official Store</title>
     <style>
-        body {
-            font-family: sans-serif;
-            background-color: #121212;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
+        body { background-color: #0b0b0b; color: white; font-family: sans-serif; margin: 0; text-align: center; }
+        .header { padding: 50px; background: #1a1a1a; border-bottom: 2px solid #00ffcc; }
+        h1 { color: #00ffcc; letter-spacing: 5px; }
+        
+        /* The Cool Product Frame */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 40px; }
+        .card { 
+            background: #161616; 
+            border: 1px solid #333; 
+            padding: 20px; 
+            border-radius: 15px; 
+            transition: 0.3s;
         }
-        .brand-box {
-            border: 3px solid #00ffcc;
-            padding: 40px;
-            display: inline-block;
-            border-radius: 15px;
-        }
-        h1 { color: #00ffcc; font-size: 3rem; margin-bottom: 10px; }
-        p { font-size: 1.2rem; color: #cccccc; }
+        .card:hover { border-color: #00ffcc; transform: translateY(-5px); box-shadow: 0 0 15px #00ffcc; }
+        
+        .product-img { width: 100%; height: 200px; background: #222; border-radius: 10px; margin-bottom: 15px; object-fit: cover; }
+        .buy-btn { background: #00ffcc; color: black; border: none; padding: 10px; width: 100%; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="brand-box">
-        <h1>AYSTAN 🌍</h1>
-        <p>The Future of Branding</p>
-        <hr style="width:50%; border: 1px solid #333;">
-        <p>Our official website is under construction.</p>
+    <div class="header">
+        <h1>AYSTAN</h1>
+        <p>PREMIUM BRAND STORE</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="product1.jpg" class="product-img">
+            <h3>Aystan Classic</h3>
+            <p>$99.00</p>
+            <button class="buy-btn">BUY NOW</button>
+        </div>
+        <div class="card">
+            <img src="product2.jpg" class="product-img">
+            <h3>Aystan Elite</h3>
+            <p>$149.00</p>
+            <button class="buy-btn">BUY NOW</button>
+        </div>
     </div>
 </body>
 </html>
